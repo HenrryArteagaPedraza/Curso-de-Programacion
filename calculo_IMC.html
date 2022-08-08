@@ -1,0 +1,166 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA CALCULO DE IMC</h1>
+
+<script>
+	
+function saltarlinea() {
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+	
+}
+
+
+function imprimir(frase) {
+
+	document.write(frase);
+	saltarlinea();
+
+}
+
+function calcularimc(peso, altura, nombre) {
+
+	imc = peso / (altura * altura);
+	imprimir("El imc calculado de " + nombre + " es " + imc);
+
+}
+
+
+//pesoHenrry = 85
+//alturaHenrry = 1.65
+//imcHenrry = pesoHenrry / (alturaHenrry * alturaHenrry);
+//imcHenrry = calcularimc(pesoHenrry,alturaHenrry);
+imcHenrry = calcularimc(85,1.65, "Henrry");
+//imprimir("El IMC de Henrry es: " + imcHenrry); 
+
+
+//pesoTatiana = 65
+//alturaTatiana = 1.55
+//imcTatiana = pesoTatiana / (alturaTatiana * alturaTatiana);
+//imcTatiana = calcularimc(pesoTatiana,alturaTatiana);
+imcTatiana = calcularimc(65,1.55, "Tatiana");
+//imprimir("El IMC de Tatiana es: " + imcTatiana); 
+
+</script>
+
+
+<script>
+	
+function saltarlinea() {
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+	
+}
+
+
+function imprimir(frase) {
+
+	document.write(frase);
+	saltarlinea();
+
+}
+
+//function calcularimc(peso1, altura1, nombre1, peso2, altura2, nombre2) {
+
+	//imc1 = peso1 / (altura1 * altura1);
+	//imc2 = peso2 / (altura2 * altura2);
+
+//	imprimir("El promedio de imc calculado de " + nombre1 + " y " + nombre2 + " es: " + (imc1+imc2)/2);
+//}
+
+function calcularimc(peso,altura) {
+
+	imc = peso / (altura*altura)
+	return imc
+
+}
+	var imcHenrry = calcularimc(85,1.65)
+	var imcTatiana = calcularimc(65,1.55)
+
+//calcularimc(85,1.65, "Henrry",65,1.55, "Tatiana")
+//imprimir("El promedio de imc calculado de " + nombre1 + " y " + nombre2 + " es: " + (imc1+imc2)/2);
+
+	imprimir("El promedio del imc calculado de Henrry y Tatiana es: " + (imcHenrry+imcTatiana)/2);
+
+</script>
+
+
+
+<script>
+	
+function calcularimc(peso,altura) {
+
+	//imc = peso / (altura*altura)
+	//return imc
+	return (peso / (altura*altura));
+}
+	//var imcHenrry = calcularimc(85,1.65)
+	//var imcTatiana = calcularimc(65,1.55)
+
+	//imprimir("El promedio del imc calculado de Henrry y Tatiana es: " + (imcHenrry+imcTatiana)/2);
+
+	imprimir("El promedio del imc calculado de Henrry y Tatiana es: " + (calcularimc(85,1.65)+calcularimc(65,1.55))/2);
+
+</script>
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostrar(resultado);
+
+    document.write("<br>");
+   	document.write("<br>");
+   	document.write("<br>");
+</script>
+
+<script>
+	
+function calcularimc(peso,altura) {
+
+	return (peso / (altura * altura));
+
+}
+
+	//pesoInformado = 85
+	//alturaInformada = 1.65
+	nombre = prompt("informe su nombre")
+	pesoInformado = prompt(nombre + ", Informe su peso")
+	alturaInformada = prompt(nombre + ", Informe su altura")
+
+	imccalculado = calcularimc(pesoInformado,alturaInformada);
+
+	//imprimir("El imc calculado es " + imccalculado);
+	imprimir(nombre + ", su imc calculado es: " + imccalculado);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
